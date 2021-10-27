@@ -12,13 +12,9 @@ public class TextbookSearchController {
 	}
 
     public void invokeTextbookSearch(String title, String ISBN, String author, int yearPublished, String language){
-
-
-
     }
 
     public void updateView(){
-        
     }
 
 }
