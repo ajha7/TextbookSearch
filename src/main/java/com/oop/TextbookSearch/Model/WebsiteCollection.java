@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class WebsiteCollection {
-	/*private final static HashMap<String, Runnable> websiteList = new HashMap<>(
-				("https://libgen.is/", 
+	/*private final static HashMap<String, > websiteList = new HashMap<>(
+				("https://libgen.is/", getLibgenTextbook())
 				"https://z-lib.org/"
 			);*/
+	
 	ArrayList<String> textbookWebsites = new ArrayList<>();
 	
 	/*
