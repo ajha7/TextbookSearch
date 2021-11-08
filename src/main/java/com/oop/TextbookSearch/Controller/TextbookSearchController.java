@@ -42,7 +42,7 @@ public class TextbookSearchController {
     }
     
     private ArrayList<String> invokeTextbookSearch(Textbook textbook){
-    	WebsiteCollection websiteCollection = new WebsiteCollection();
+    	WebsiteCollection websiteCollection = WebsiteCollection.getInstance();
     	return websiteCollection.getTextbookWebsites(textbook);
     }
     
