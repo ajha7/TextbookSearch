@@ -11,9 +11,13 @@
 	
 
 <div class="wrapper">
-	<input type="text" class="input" 
-	placeholder="Search your Textbook">
-	<div class="searchbtn"><i class="fas fa-search"></i>
+	<form th:action="@{/search}" method = "post" th:object="${textbookObj}"> 
+		<input type="text" class="input" name="textbookSearch" placeholder="Search your Textbook" size="50" th:field="*{title}">
+		<!-- <div class="searchbtn"><i class="fas fa-search"></i> -->
+		
+		<button type="submit" class="searchbtn"><i class="fas fa-search"></i>
+		
+	</form>
 </div>
 
 </body>
