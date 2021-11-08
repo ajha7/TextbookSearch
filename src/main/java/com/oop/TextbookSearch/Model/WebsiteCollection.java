@@ -28,7 +28,7 @@ public class WebsiteCollection {
 			//populate textbookWebsites with Parser method results 
 			//iterate through the websiteList to invoke Parser methods
 			ArrayList<String> textbookWebsites = new ArrayList<>();
-		
+			
 			return textbookWebsites;
 	}
 	
