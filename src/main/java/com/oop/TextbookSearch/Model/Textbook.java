@@ -29,6 +29,7 @@ public class Textbook
 		return this.ISBN; 
 	}
 	
+
 	public String getAuthor() {
 		
 		return this.author; 
@@ -42,5 +43,40 @@ public class Textbook
 	public String getLanguage() {
 		
 		return this.language; 
+	}
+	
+	/**
+	 * @param title the title to set
+	 */
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	/**
+	 * @param iSBN the iSBN to set
+	 */
+	public void setISBN(String iSBN) {
+		ISBN = iSBN;
+	}
+
+	/**
+	 * @param author the author to set
+	 */
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	/**
+	 * @param yearPublished the yearPublished to set
+	 */
+	public void setYearPublished(int yearPublished) {
+		this.yearPublished = yearPublished;
+	}
+
+	/**
+	 * @param language the language to set
+	 */
+	public void setLanguage(String language) {
+		this.language = language;
 	}
 }
