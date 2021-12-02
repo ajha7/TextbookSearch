@@ -1,6 +1,7 @@
 package com.oop.TextbookSearch.Controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -31,19 +32,21 @@ public class TextbookSearchController {
     
     @PostMapping(value="/search")
     public String resultsPage(Model model, @ModelAttribute("textbookObj") Textbook textbookObj) {
-    	ArrayList<String> links = invokeTextbookSearch(textbook);
+    	
+    	HashMap<String, ArrayList<Textbook>> textbooks = invokeTextbookSearch(textbookObj);
     	try {	
 			Thread.sleep(1000);		//sleep so Parser has time to parse and display results to web page
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-    	model.addAttribute("links", links);
+    	model.addAttribute("listOfWebsites", WebsiteCollection.getWebsites());
+    	model.addAttribute("textbooks", textbooks);
     	return "results";
     }
     
-    private ArrayList<String> invokeTextbookSearch(Textbook textbook){
+    private HashMap<String, ArrayList<Textbook>> invokeTextbookSearch(Textbook textbook){
     	WebsiteCollection websiteCollection = WebsiteCollection.getInstance();
-    	return websiteCollection.getTextbookWebsites(textbook);
+    	return websiteCollection.getTextbookWebsiteInfo(textbook);
     }
     
     /*

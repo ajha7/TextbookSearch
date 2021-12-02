@@ -79,4 +79,9 @@ public class Textbook
 	public void setLanguage(String language) {
 		this.language = language;
 	}
+	
+	@Override
+	public String toString() {
+		return "title: " + this.getTitle();
+	}
 }
