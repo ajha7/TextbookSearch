@@ -1,7 +1,5 @@
 package com.oop.TextbookSearch.Model;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
@@ -9,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Parser {
-
+	
 	public ArrayList<Textbook> getLibgenTextbook(Textbook textbook) {
 		String textbookTitle = textbook.getTitle();
 		ArrayList<Textbook> textbooks = new ArrayList<>();
@@ -20,7 +18,7 @@ public class Parser {
 		String baseUrl = "https://libgen.is/";
 		driver.get(baseUrl);
 		//driver.findElement(By.id("searchFieldx"));
-				
+		
 		//parse further for textbook in next milestone 
 		
 		return textbooks;
@@ -30,7 +28,7 @@ public class Parser {
 		String textbookTitle = textbook.getTitle();
 		
 		System.out.println(textbook.getTitle());
-		System.setProperty("webdriver.chrome.driver","chromedriver");
+		System.setProperty("webdriver.chrome.driver","chromedriver");	
 		WebDriver driver = new ChromeDriver();
 		String baseUrl = "https://1lib.us/";
 		ArrayList<Textbook> textbooks = new ArrayList<>();

@@ -11,8 +11,9 @@
 	
 
 <div class="wrapper">
-	<tr th:each="key : ${listOfWebsites}"> <span>${textbooks.get(key)}</span>
-	
+	<li th:each="key : ${listOfWebsites}">
+		<span th:text = "${key}"></span> = <span th:text="${textbooks.get(key)}"></span>
+	</li>
 </div>
 
 </body>

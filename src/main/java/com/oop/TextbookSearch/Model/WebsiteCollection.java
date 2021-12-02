@@ -23,6 +23,7 @@ public class WebsiteCollection {
 	public static ArrayList<String> getWebsites() {
 		return websites; 
 	}
+	
 	/*
 	 * Retrieves the links which contain the desired textbook
 	 * @param Textbook textbook 

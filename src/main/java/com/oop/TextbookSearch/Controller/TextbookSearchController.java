@@ -34,6 +34,7 @@ public class TextbookSearchController {
     public String resultsPage(Model model, @ModelAttribute("textbookObj") Textbook textbookObj) {
     	
     	HashMap<String, ArrayList<Textbook>> textbooks = invokeTextbookSearch(textbookObj);
+    	System.out.println(textbooks.toString());
     	try {	
 			Thread.sleep(1000);		//sleep so Parser has time to parse and display results to web page
 		} catch (InterruptedException e) {
