@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 
+
 *{
     margin:0;
     padding:0;
@@ -8,18 +9,28 @@
     font-family: 'Zen Kurenaido', sans-serif;
 }
 body{
-    background:#718093;
+    background: orange;
 
 }
+.header{
+    position: relative;
+    text-align: center;
+    padding: 250px;
+    text-shadow: 70px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
 .wrapper{
     position: absolute;
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
-    background: rgba(0,0,0,0.6);
-    max-width:550px;
+    background: rgba(0,0,0,0.5);
+    max-width:450px;
     width: 100%;
-    padding: 12px;
+    padding: 16px;
     display: flex;
     justify-content: space-between;
     border-radius: 12px;
@@ -27,13 +38,29 @@ body{
 
 }
 .wrapper .input {
-    width: 85%;
-    padding: 15px 20px;
+    width: 77%;
+    padding: 20px 10px;
     border: none;
     border-radius: 12px;
     font-weight: bold;
 }
 
+.searchbtn {
+    background: coral;
+    width: 12%;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.searchbtn .fas{
+	position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+
+}
 .searchbtn {
     background: #12c7df;
     width: 12%;
