@@ -73,7 +73,7 @@ public class Parser {
 		catch (NoSuchElementException e) {
 				e.printStackTrace();
 		}
-		
+	
 		return textbooks;
 	}
 	

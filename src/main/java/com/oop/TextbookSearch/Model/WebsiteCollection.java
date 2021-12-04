@@ -55,7 +55,9 @@ public class WebsiteCollection {
 				} catch (ClassNotFoundException | NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
 					e.printStackTrace();
 		
-					textbooks = parser.getTextbooks();	//retrieves the textbooks accumulated from the website in case an error is thrown
+					
+					textbooks = parser.getTextbooks();	//retrieves the textbooks accumulated from the website in case an error is thrown/textbook not found
+					
 					System.out.println(e.getCause());
 				}
 				
