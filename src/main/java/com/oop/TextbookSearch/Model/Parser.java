@@ -29,7 +29,7 @@ public class Parser {
 			
 			for (int i = 1; i <= 3; i++)
 			{
-				By by = By.xpath("/html/body/table/tbody/tr[2]/td/div/div/div/div[2]/div[" + (i * 2) +  "]/div/table/tbody/tr/td[2]/table/tbody/tr[1]/td/h3/a"); //retrieve results
+				By by = By.xpath("/html/body/table/tbody/tr[2]/td/div/div/div/div[2]/div[" + (i * 2) +  "]/div/table/tbody/tr/td[2]/table/tbody/tr[1]/td/h3/a"); //retrieve results, throws an exception if no result found
 				String title = driver.findElement(by).getText();
 				
 				Textbook parsedTextbook = new Textbook();	
@@ -57,12 +57,12 @@ public class Parser {
 		String baseUrl = "https://libgen.is/";
 		driver.get(baseUrl);
 		try {	
-			driver.findElement(By.id("searchform")).sendKeys(textbookTitle);
-			driver.findElement(By.xpath("/html/body/table/tbody[2]/tr/td[2]/form/input[2]")).click();
+			driver.findElement(By.id("searchform")).sendKeys(textbookTitle); //enter textbook in search bar
+			driver.findElement(By.xpath("/html/body/table/tbody[2]/tr/td[2]/form/input[2]")).click();	//click search
 			
 			for (int i = 2; i <= 4; i++)
 			{
-				String titleId = driver.findElement(By.xpath("/html/body/table[3]/tbody/tr[" + i + "]/td[1]")).getText();
+				String titleId = driver.findElement(By.xpath("/html/body/table[3]/tbody/tr[" + i + "]/td[1]")).getText(); //retrieve results, throws an exception if no result found
 				String title = driver.findElement(By.id(titleId)).getText();
 				
 				Textbook parsedTextbook = new Textbook();		
