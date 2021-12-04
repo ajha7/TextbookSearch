@@ -82,6 +82,6 @@ public class Textbook
 	
 	@Override
 	public String toString() {
-		return "title: " + this.getTitle();
+		return "Title: " + this.getTitle();
 	}
 }
