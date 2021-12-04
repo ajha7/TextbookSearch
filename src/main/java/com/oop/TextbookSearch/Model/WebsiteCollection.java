@@ -13,7 +13,7 @@ public class WebsiteCollection {
 	private static WebsiteCollection instance = null;
 	int websiteCount = 2; 
 	private final static ArrayList<String> websites = new ArrayList<>( Arrays.asList("Zlib", "Libgen"));	//first letter of website is capital to preserve camel casing of Parser methods
-	//private final static ArrayList<String> links = new ArrayList<>(Arrays.asList("https://1lib.us/", "https://libgen.is/")); 
+	
 	private WebsiteCollection() {}
 	
 	//Singleton design pattern so only one instance of the class can be created

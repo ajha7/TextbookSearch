@@ -42,7 +42,7 @@ public class TextbookSearchController {
     public String resultsPage(Model model, @ModelAttribute("textbookObj") Textbook textbookObj) {
     	
     	HashMap<String, ArrayList<Textbook>> textbooks = invokeTextbookSearch(textbookObj);	
-    	System.out.println(textbooks.toString());
+    	
     	try {	
 			Thread.sleep(1000);		//sleep for processing time
 		} catch (InterruptedException e) {
