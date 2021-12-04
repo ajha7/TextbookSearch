@@ -53,10 +53,10 @@ public class Textbook
 	}
 
 	/**
-	 * @param iSBN the iSBN to set
+	 * @param ISBN the ISBN to set
 	 */
-	public void setISBN(String iSBN) {
-		ISBN = iSBN;
+	public void setISBN(String ISBN) {
+		this.ISBN = ISBN;
 	}
 
 	/**
@@ -82,6 +82,6 @@ public class Textbook
 	
 	@Override
 	public String toString() {
-		return "title: " + this.getTitle();
+		return "Title: " + this.getTitle();
 	}
 }
