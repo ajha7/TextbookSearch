@@ -88,6 +88,7 @@ public class Parser {
 	
 	/*
 	 * clears the arraylist holding the textbooks from the website parsing
+	 * 
 	 */
 	public void clearTextbooks() {
 		textbooks.clear();
