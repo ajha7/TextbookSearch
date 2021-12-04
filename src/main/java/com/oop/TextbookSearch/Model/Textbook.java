@@ -8,10 +8,9 @@ public class Textbook
 	private int yearPublished; 
 	private String language; 
 	
-	public Textbook(String title, String author) 
+	public Textbook(String title) 
 	{
 		this.title = title; 
-		this.author = author; 
 	}
 	
 	public Textbook() 
