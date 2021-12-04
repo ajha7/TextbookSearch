@@ -53,7 +53,7 @@ public class Textbook
 	}
 
 	/**
-	 * @param iSBN the iSBN to set
+	 * @param ISBN the ISBN to set
 	 */
 	public void setISBN(String ISBN) {
 		this.ISBN = ISBN;
